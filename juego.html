@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="juego.css">
+    <title>CheekySquare</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <link rel="icon" href="./media/favicon.png">
+</head>
+
+<body>
+    <div id="principal">
+        <h1 id="subesDeNivel">Subes de nivel!</h1>
+        <div id="cuadro-instrucciones">
+            <div id="como-jugar">
+                <h1>Cómo jugar</h1>
+            </div>
+            <div id="instrucciones">
+                <p>Con cada clic en el cuadro se consigue un punto</p>
+                <p>Debes conseguir el objetivo de puntos antes de que el contador llegue a 0</p>
+                <p>Si lo consigues, pasarás al siguiente nivel donde el objetivo será más difícil</p>
+                <p>Si no consigues el objetivo antes de que se acabe el tiempo, o haces clic fuera del cuadro,
+                    perderás y volverás a empezar desde el nivel 1</p>
+            </div>
+            <div id="comenzar">
+                <button id="boton-empezar">Vamos a jugar!</button>
+            </div>
+        </div>
+        <div id="cuadro-perdiste" hidden>
+            <h1>Perdiste!</h1>
+            <button id="boton-reintentar">Volver a intentarlo</button>
+        </div>
+        <div id="titulo">
+            <h1 id="titulo-juego">CheekySquare  </h1>
+        </div>
+        <div id="juego">
+            <div id="cuadrado"></div>
+        </div>
+        <div id="info">
+            <div class="seccion-info" id="nivel-transicion">Nivel <span id="nivel">1</span></div>
+            <div class="seccion-info">Objetivo: <span id="objetivo">5</span></div>
+            <div class="seccion-info">Puntos: <span id="puntos">0</span></div>
+            <div id="tiempo-restante">Tiempo restante: <span id="segundos">30</span></div>
+        </div>
+    </div>
+    <script src="juego.js"></script>
+</body>
+
+</html>
